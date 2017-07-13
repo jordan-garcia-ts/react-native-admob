@@ -42,6 +42,8 @@
     return kGADAdSizeSmartBannerPortrait;
   } else if ([bannerSize isEqualToString:@"smartBannerLandscape"]) {
     return kGADAdSizeSmartBannerLandscape;
+  } else if([bannerSize isEqualToString:@"custom-640-300"]) {
+    return GADAdSizeFromCGSize(CGSizeMake(640, 300));
   } else {
     return kGADAdSizeBanner;
   }
